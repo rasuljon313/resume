@@ -1,0 +1,64 @@
+@import '../variables';
+@import '../mixins';
+
+.projects {
+  @include flex(column, flex-start, stretch, $spacing-lg);
+
+  &__grid {
+    display: flex;
+    // grid-template-columns: 1fr;
+    gap: $spacing-lg;
+    align-items: center;
+    max-width: 810px;
+    overflow: hidden;
+    overflow-x: scroll;
+    // @media (min-width: $breakpoint-md) {
+    //   grid-template-columns: repeat(2, 1fr);
+    // }
+  }
+
+  &__card {
+    @include card;
+    overflow: hidden;
+    min-width: 350px;
+
+    img {
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: $spacing-md;
+    @include flex(column, flex-start, stretch, $spacing-md);
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: $text-primary;
+  }
+
+  &__meta {
+    @include flex(row, flex-start, center, $spacing-md);
+    color: $text-secondary;
+    font-size: 0.875rem;
+  }
+
+  &__meta-item {
+    @include flex(row, flex-start, center, $spacing-xs);
+  }
+
+  &__tags {
+    @include flex(row, flex-start, center, $spacing-sm);
+  }
+
+  &__tag {
+    padding: $spacing-xs $spacing-sm;
+    background-color: rgba($text-secondary, 0.1);
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    color: $text-secondary;
+  }
+}

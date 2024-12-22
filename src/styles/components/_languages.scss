@@ -1,0 +1,17 @@
+@import '../variables';
+@import '../mixins';
+
+.languages {
+  @include flex(column, flex-start, stretch, $spacing-md);
+
+  &__list {
+    @include flex(flex-start, stretch, $spacing-sm);
+    gap: 20px ;
+  }
+
+  &__item {
+    @include flex(row, flex-start, center, $spacing-sm);
+    color: $text-secondary;
+    font-size: 0.875rem;
+  }
+}

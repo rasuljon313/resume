@@ -1,0 +1,60 @@
+@import 'variables';
+@import 'mixins';
+@import 'components/profile';
+@import 'components/skills';
+@import 'components/projects';
+@import 'components/languages';
+@import 'components/social-links';
+
+body {
+  background-color: $bg-dark;
+  color: $text-primary;
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: $spacing-md;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-xl;
+  
+  @media (min-width: $breakpoint-lg) {
+    grid-template-columns: 400px 1fr;
+  }
+}
+
+.sidebar {
+  @include flex(column, flex-start, stretch, $spacing-lg);
+  min-height: calc(100vh - 2 * #{$spacing-md});
+}
+
+.main {
+  @include flex(column, flex-start, stretch, $spacing-xl);
+}
+
+.intro {
+  @include flex(column, flex-start, stretch, $spacing-md);
+
+  &__text {
+    color: $text-secondary;
+    line-height: 1.6;
+    margin: 0;
+    
+    & + & {
+      margin-top: $spacing-md;
+    }
+  }
+}
+
+.section {
+  &__heading {
+    @include heading;
+  }
+}

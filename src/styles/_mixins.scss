@@ -1,0 +1,25 @@
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin card {
+  background-color: $bg-card;
+  border-radius: 1rem;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background-color: $hover-bg;
+  }
+}
+
+@mixin heading {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $text-secondary;
+  margin-bottom: $spacing-sm;
+}

@@ -1,0 +1,63 @@
+@import '../variables';
+@import '../mixins';
+
+.profile {
+  @include flex(column, flex-start, stretch, $spacing-lg);
+
+  &__header {
+    @include flex(row, flex-start, flex-start, $spacing-md);
+  }
+
+  &__image {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__info {
+    @include flex(column, flex-start, stretch, $spacing-xs);
+  }
+
+  &__title {
+    @include flex(row, flex-start, center, $spacing-sm);
+    
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      color: $text-primary;
+    }
+  }
+
+  &__badge {
+    color: $accent-blue;
+  }
+
+  &__subtitle {
+    color: $text-secondary;
+    font-size: 0.875rem;
+  }
+
+  &__content {
+    @include flex(column, flex-start, stretch, $spacing-lg);
+  }
+
+  &__section {
+    @include flex(column, flex-start, stretch, $spacing-sm);
+  }
+
+  &__contact {
+    @include flex(column, flex-start, stretch, $spacing-sm);
+    
+    a, div {
+      @include flex(row, flex-start, center, $spacing-sm);
+      color: $text-secondary;
+      text-decoration: none;
+      transition: color 0.2s ease;
+      
+      &:hover {
+        color: $text-primary;
+      }
+    }
+  }
+}
