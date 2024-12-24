@@ -7,7 +7,7 @@
   &__grid {
     display: flex;
     // grid-template-columns: 1fr;
-    gap: $spacing-lg;
+    gap: $spacing-md;
     align-items: center;
     max-width: 810px;
     overflow: hidden;
@@ -20,7 +20,7 @@
   &__card {
     @include card;
     overflow: hidden;
-    min-width: 350px;
+    min-width: $image-sm;
 
     img {
       width: 100%;
