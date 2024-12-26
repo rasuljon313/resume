@@ -2,14 +2,14 @@
 @import "../mixins";
 
 .profile {
-  @include flex(column, flex-start, stretch, $spacing-lg);
+  @include flex(column, flex-start, stretch, $spacing-sm);
 
   &__header {
     @include flex(row, flex-start, center, $spacing-md);
   }
   &__svg {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   &__image {
     width: 6rem;
@@ -26,7 +26,6 @@
     @include flex(row, flex-start, center, $spacing-md);
 
     h1 {
-      font-size: 1.875rem;
       font-weight: 700;
       color: $text-primary;
     }
@@ -42,7 +41,7 @@
   }
 
   &__content {
-    @include flex(column, flex-start, stretch, $spacing-lg);
+    @include flex(column, flex-start, stretch, $spacing-md);
     &__box {
       @include flex(column, center, start);
       &__txt {
@@ -55,11 +54,22 @@
 
   &__section {
     @include flex(column, flex-start, stretch, $spacing-sm);
+   &__heading{
     &__box{
-      h3{
-        color: red !important;
+      &__name{
+        color: #a0a0a0;
+        margin: 0 !important;
+      }
+      &__title{
+        color: #a0a0a0;
+        margin: 0 !important;
+      }
+      &__txt{
+        color: #a0a0a0;
+        margin: 0 !important;
       }
     }
+   }
   }
 
   &__contact {
@@ -71,6 +81,7 @@
       color: $text-secondary;
       text-decoration: none;
       transition: color 0.2s ease;
+      width: 100%;
 
       &:hover {
         color: $text-primary;

@@ -2,7 +2,6 @@ import Profile from './components/Profile';
 import Skills from './components/Skills';
 import Languages from './components/Languages';
 import Projects from './components/Projects';
-import SocialLinks from './components/SocialLinks';
 import './styles/main.scss';
 
 const App = () => {
@@ -13,7 +12,6 @@ const App = () => {
           <Profile />
           <Skills />
           <Languages />
-          <SocialLinks />
         </aside>
         
         <main className="main">

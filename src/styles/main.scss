@@ -4,7 +4,6 @@
 @import 'components/skills';
 @import 'components/projects';
 @import 'components/languages';
-@import 'components/social-links';
 
 body {
   background-color: $bg-dark;
@@ -31,7 +30,7 @@ body {
 }
 
 .sidebar {
-  @include flex(column, flex-start, stretch, $spacing-lg);
+  @include flex(column, flex-start, stretch, $spacing-md);
   min-height: calc(100vh - 2 * #{$spacing-md});
 }
 
