@@ -2,19 +2,17 @@
 @import '../mixins';
 
 .projects {
-  @include flex(column, flex-start, stretch, $spacing-lg);
+  @include flex(column, flex-start, stretch, $spacing-md);
 
   &__grid {
     display: flex;
-    // grid-template-columns: 1fr;
     gap: $spacing-md;
     align-items: center;
-    max-width: 810px;
+    max-width: 820px;
     overflow: hidden;
     overflow-x: scroll;
-    // @media (min-width: $breakpoint-md) {
-    //   grid-template-columns: repeat(2, 1fr);
-    // }
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
   }
 
   &__card {
@@ -24,26 +22,45 @@
 
     img {
       width: 100%;
-      height: 12rem;
       object-fit: cover;
     }
   }
 
   &__content {
     padding: $spacing-md;
-    @include flex(column, flex-start, stretch, $spacing-md);
+    @include flex(column, flex-start, stretch, $spacing-sm);
+    &__box{
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      p{
+        margin: 0 !important;
+        font-size: 0.6rem;
+      }
+    }
   }
 
   &__title {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
     color: $text-primary;
+    margin: 0 !important;
   }
 
   &__meta {
     @include flex(row, flex-start, center, $spacing-md);
     color: $text-secondary;
     font-size: 0.875rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+    &-title{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;  
+    }
   }
 
   &__meta-item {
@@ -53,12 +70,22 @@
   &__tags {
     @include flex(row, flex-start, center, $spacing-sm);
   }
+  &__description {
+    margin:  0 !important;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+  }
 
   &__tag {
     padding: $spacing-xs $spacing-sm;
     background-color: rgba($text-secondary, 0.1);
     border-radius: 0.25rem;
-    font-size: 0.875rem;
+    font-size: 0.8rem;
+    text-align: center;
     color: $text-secondary;
+    min-width: 130px;
   }
 }
+

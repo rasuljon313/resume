@@ -16,14 +16,14 @@ body {
 .container {
   max-width: 72rem;
   margin: 0 auto;
-  padding: $spacing-md;
+  padding: $spacing-sm;
 }
 
 .layout {
   display: grid;
   grid-template-columns: 1fr;
   gap: $spacing-xl;
-  
+  align-items: center;
   @media (min-width: $breakpoint-lg) {
     grid-template-columns: 400px 1fr;
   }
@@ -35,7 +35,7 @@ body {
 }
 
 .main {
-  @include flex(column, flex-start, stretch, $spacing-xl);
+  @include flex(column, flex-start, stretch, $spacing-md);
 }
 
 .intro {
