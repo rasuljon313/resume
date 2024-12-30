@@ -5,9 +5,9 @@ const projects = [
   {
     title: 'Cinephie',
     image: img,
-    tags: ['React', 'Sass', 'JavaScript', "Axios", "Use-debounce", "zustand", "tanstack/react-query"],
+    tags: ['React', 'Sass', 'JavaScript', "TypScript", "Axios", "Use-debounce", "zustand", "tanstack/react-query"],
     description: `"Cinephie Website" - My Experience and Impressions
-    The process of creating the cinema website was both exciting and educational for me. Through this project, I learned how to combine web design, front-end, and back-end technologies. I designed the website's pages using HTML, CSS, and JavaScript. To enhance user experience (UX), I used the React framework, which made the site more interactive and faster.
+    The process of creating the cinema website was both exciting and educational for me. Through this project, I learned how to combine web design, front-end, and back-end technologies. I designed the website's pages using HTML, Sass, and JavaScript. To enhance user experience (UX), I used the React framework, which made the site more interactive and faster.
     The developed website allows users to search for movies and discover them with ratings and reviews. Additionally, I added search and filtering features to help users easily find the movies they are looking for.`,
     url: 'https://cinema-dusky-nine.vercel.app/',
     real: "Has not domain"
@@ -15,7 +15,7 @@ const projects = [
   {
     title: 'Auto Zoom',
     image: img1,
-    tags: ['React', 'HTML', 'CSS', 'JavaScript'],
+    tags: ['React', 'HTML', 'Sass', 'JavaScript'],
     description: `"Auto Zoom" - My Experience and Impressions
     The process of creating the "Auto Admin" website was both challenging and highly educational. Through this project, I not only learned how to create a basic website, but I also developed an admin panel and login system. The project taught me various new technologies and tools that I can apply in future projects. I also developed a Login System where users could securely log into the website. I implemented JWT (JSON Web Tokens) for user authentication, which helped me understand how authentication and authorization work.`,
     url: 'https://login-12345.vercel.app/',
