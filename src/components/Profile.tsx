@@ -1,9 +1,8 @@
-import { Mail, Phone, BadgeCheck } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { BiLogoGithub } from 'react-icons/bi';
 import { CiUser } from 'react-icons/ci';
 import { LiaTelegramPlane } from 'react-icons/lia';
 import { PiLinkedinLogoFill } from 'react-icons/pi';
-
 export default function Profile() {
   return (
     <div className="profile">
@@ -12,7 +11,6 @@ export default function Profile() {
         <div className="profile__info">
           <div className="profile__title">
             <h1>Anvarov Rasuljon</h1>
-            <BadgeCheck className="profile__badge" size={24} />
           </div>
         </div>
       </div>

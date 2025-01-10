@@ -3,7 +3,6 @@ import Skills from './components/Skills';
 import Languages from './components/Languages';
 import Projects from './components/Projects';
 import './styles/main.scss';
-import { BiLogoGithub } from 'react-icons/bi';
 
 const App = () => {
   return (
