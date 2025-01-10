@@ -2,7 +2,7 @@ import { Mail, Phone, BadgeCheck } from 'lucide-react';
 import { BiLogoGithub } from 'react-icons/bi';
 import { CiUser } from 'react-icons/ci';
 import { LiaTelegramPlane } from 'react-icons/lia';
-import { RxVercelLogo } from 'react-icons/rx';
+import { PiLinkedinLogoFill } from 'react-icons/pi';
 
 export default function Profile() {
   return (
@@ -34,21 +34,21 @@ export default function Profile() {
         <div className="profile__section">
           <h2 className="section__heading">Contact</h2>
           <div className="profile__contact">
-          <a href="https://github.com/rasuljon313" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:anvarovrasuljon78@gmail.com">
+              <Mail size={16} style={{ maxWidth: '20px', width: '100%' }}/>
+             Gmail
+            </a>
+            <a href="https://github.com/rasuljon313" target="_blank" rel="noopener noreferrer">
               <BiLogoGithub size={20} style={{ maxWidth: '20px', width: '100%' }} />
               Git Hub
              </a>
-            <a href="mailto:anvarovrasuljon78@gmail.com">
-              <Mail size={16} style={{ maxWidth: '20px', width: '100%' }}/>
-              My Gmail
-            </a>
-            <a href="https://vercel.com/rasuljon313s-projects" target="_blank" rel="noopener noreferrer">
-              <RxVercelLogo size={20} style={{ maxWidth: '20px', width: '100%' }}/>
-              MY Vercel
-            </a>
+            <a href="https://www.linkedin.com/in/rasuljon-anvarov-348a7933a/" target="_blank" rel="noopener noreferrer">
+              <PiLinkedinLogoFill size={20} style={{ maxWidth: '20px', width: '100%' }} />
+              LinkedIn
+             </a>
             <a href="https://t.me/rasuljon_234" target="_blank" rel="noopener noreferrer">
               <LiaTelegramPlane size={16} style={{ maxWidth: '20px', width: '100%' }}/>
-              My Telegram
+              Telegram
             </a>
             <div>
             <a href="tel:+998770308082">

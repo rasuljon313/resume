@@ -1,5 +1,5 @@
 const skills = [
-  'Html', 'Css (Tailwind, Sass, Scss)', "AJAX", 'JavaScript','Api (Axios & Query)', 'TypeScript', 'React', 'Redux (Toolkit & Zustand & Valtio)', 'Git'
+  'Html', 'Css (Tailwind, Sass, Scss)','Trello', 'JavaScript','Api', 'TypeScript', 'React', 'Toolkit & Zustand', 'Git'
 ];
 
 export default function Skills() {
